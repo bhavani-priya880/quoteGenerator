@@ -1,6 +1,6 @@
 async function fetchQuote() {
     try {
-      const response = await fetch("http://127.0.0.1:5001/quote"); // ✅ correct port
+      const response = await fetch("https://quotegenerator-3.onrender.com/quote"); // ✅ correct port
       const data = await response.json();
   
       document.getElementById("quote").innerText = `"${data.quote}"`;
